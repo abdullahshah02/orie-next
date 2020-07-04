@@ -1,4 +1,5 @@
 import App from "next/app";
+import HeadTag from '../src/components/_App/HeadTag'
 import Header from '../src/components/_App/Header'
 import '../src/styles/styles.sass'
 import '../src/styles/styles.css'
@@ -84,6 +85,7 @@ class MyApp extends App {
     const { Component, pageProps } = this.props;
     return (
       <>
+        <HeadTag />
         <Header {...pageProps} />
         <Component {...pageProps} posts={this.state.posts} setPosts={this.setPosts}/>
       </>
