@@ -4,6 +4,7 @@ import connectDB from '../../src/utils/connectDB';
 import isLength from 'validator/lib/isLength'
 import bcrypt from 'bcrypt'
 import isEmail from 'validator/lib/isEmail'
+import sanitize from 'mongo-sanitize'
 
 export default async (req, res) => {
     await connectDB()
@@ -45,9 +46,13 @@ async function handleGetRequest(req, res) {
 
 async function handlePutRequest(req, res) {
 
-    const { username, photoURL } = req.body;
-    const { email, password } = req.body;
-    const { curr_password, new_password, confirm_new_password } = req.body
+    const username = sanitize(req.body.username)
+    const photoURL = sanitize(req.body.photoURL)
+    const email = sanitize(req.body.email)
+    const password = sanitize(req.body.password)
+    const curr_password = sanitize(req.body.curr_password)
+    const new_password = sanitize(req.body.new_password)
+    const confirm_new_password = sanitize(req.body.confirm_new_password)
     //console.log(req.body)
 
     if (!req.headers.authorization) {

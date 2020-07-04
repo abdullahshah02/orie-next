@@ -1,12 +1,13 @@
 import User from '../../src/models/User'
 import connectDB from '../../src/utils/connectDB';
+import sanitize from 'mongo-sanitize'
 
 export default async (req, res) => {
 
     await connectDB();
 
     try {
-        const { userName } = req.query;
+        const userName = sanitize(req.query.userName)
         const userList = await User.find({ username: { $regex: `.*${userName}.*` } })
         if (userList) {
             if (userList.length > 0) {

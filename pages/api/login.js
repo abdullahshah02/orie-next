@@ -2,10 +2,12 @@ import connectDB from '../../src/utils/connectDB'
 import User from '../../src/models/User'
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
+import sanitize from 'mongo-sanitize'
 
 export default async (req, res) => {
     await connectDB();
-    const { email, password } = req.body;
+    const email = sanitize(req.body.email)
+    const password = sanitize(req.body.password)
     try {
         //Check if user exists
         const user = await User.findOne({ email }).select('+password');

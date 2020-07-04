@@ -5,11 +5,15 @@ import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
 import isEmail from 'validator/lib/isEmail'
 import isLength from 'validator/lib/isLength'
+import sanitize from 'mongo-sanitize'
 
 
 export default async (req, res) => {
     await connectDB();
-    const { username, email, password } = req.body;
+    
+    const username = sanitize(req.body.username)
+    const email = sanitize(req.body.email)
+    const password = sanitize(req.body.password)
 
     try {
 

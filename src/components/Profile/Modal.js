@@ -4,6 +4,16 @@ import cookie from 'js-cookie'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes, faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 
+
+const INITIAL_STATE = {
+    username: '',
+    photoURL: '',
+    email: '',
+    password: '',
+    curr_password: '',
+    new_password: '',
+    confirm_new_password: ''
+}
 export default function EditPreferencesModal({ closeModal, data, updateProfileData }) {
 
     const [success, setSuccess] = React.useState(null)
@@ -11,15 +21,7 @@ export default function EditPreferencesModal({ closeModal, data, updateProfileDa
     const [error, setError] = React.useState(null)
     const [loading, setLoading] = React.useState(null)
     const [disabled, setDisabled] = React.useState(false)
-    const [creds, setCreds] = React.useState({
-        username: '',
-        photoURL: '',
-        email: '',
-        password: '',
-        curr_password: '',
-        new_password: '',
-        confirm_new_password: ''
-    })
+    const [creds, setCreds] = React.useState(INITIAL_STATE)
 
 
     function handleChange(event) {
@@ -44,6 +46,9 @@ export default function EditPreferencesModal({ closeModal, data, updateProfileDa
             const response = await axios.put(url, payload, headers)
             setSuccess(response.data.msg)
             updateProfileData()
+            setCreds(INITIAL_STATE)
+            document.getElementById('username').value = ''
+            document.getElementById('photoURL').value = ''
         }
         catch (error) {
             console.log(error)
@@ -77,6 +82,7 @@ export default function EditPreferencesModal({ closeModal, data, updateProfileDa
             const response = await axios.put(url, payload, headers)
             setSuccess(response.data.msg)
             updateProfileData()
+            setCreds(INITIAL_STATE)
         }
         catch (error) {
             console.log(error)
@@ -120,6 +126,7 @@ export default function EditPreferencesModal({ closeModal, data, updateProfileDa
             const response = await axios.put(url, payload, headers)
             setSuccess(response.data.msg)
             updateProfileData()
+            setCreds(INITIAL_STATE)
         }
         catch (error) {
             console.log(error)
