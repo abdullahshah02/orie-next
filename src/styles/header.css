@@ -1,0 +1,125 @@
+.header .navbar-brand {
+    padding-top: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.header .button.is-black:hover {
+    background-color: #212121 !important;
+}
+
+.header .button.is-light {
+    color: white !important;
+    border: 1.5px solid white;
+}
+
+.header .button.is-light:hover {
+    background-color: black;
+    color: #d04f3e !important;
+}
+
+.header .button.is-light:focus {
+    background-color: black;
+    color: #d04f3e !important;
+}
+
+.header .navbar-burger {
+    margin-top: 0;
+    
+}
+
+.header .navbar-burger:hover {
+    background-color: #141414;
+    color:white;
+}
+
+.header .navbar-start>.navbar-item:hover {
+    color: #d04f3e;
+}
+
+.header .navbar-start>.navbar-item:focus {
+    color: #d04f3e;
+}
+
+.header #user-info {
+    margin-right: 2rem;
+    padding-right: 0;
+}
+
+.header #user-menu {
+    border-top: 2px solid white;
+}
+
+.header #user-menu>.navbar-item{
+    padding-right: 0px;
+}
+
+.header .navbar-item.has-dropdown.is-hoverable>.navbar-link:hover {
+    border-bottom: 0;
+}
+
+.header .navbar-dropdown{
+    background-color: black;
+    border: 0px;
+}
+
+.header .navbar-dropdown>.navbar-item:hover {
+    background-color: white;
+}
+
+.header .navbar-dropdown>.navbar-item:focus {
+    background-color:white;
+    color: black;
+    transition: 0.2s ease;
+}
+
+@media only screen and (max-width: 1000px) {
+    .header .navbar-start .navbar-item:hover {
+        border-bottom: 0;
+    }   
+
+    
+    .header .navbar-dropdown>.navbar-item:hover {
+        background-color: black;
+        color: #d04f3e !important;
+    }
+
+    .header .navbar-dropdown>.navbar-item:focus {
+        background-color: black;
+        color: #d04f3e !important;
+    }
+    
+    .header .navbar-start .navbar-item:focus {
+        background-color: black;
+        color: #d04f3e !important;
+        border-bottom: 0;
+    }
+
+    
+
+    .header #user-menu {
+        border: 0;
+    }
+}
+
+
+@media only screen and (max-width: 420px) {
+    .header .navbar-burger {
+        margin-left: 0;
+        left: 68%;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .header .navbar-burger {
+        margin-left: 0;
+        left: 67%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .header .navbar-burger {
+        margin-left: 0;
+        left: 65%;
+    }
+}

@@ -1,0 +1,160 @@
+.user-search {
+    padding-top: 2em;
+}
+
+.followed-users {
+    padding-top: 2em;
+}
+
+.user-search input {
+    border: 0px;
+}
+
+.user-search .button.is-orange {
+    color: #ffffff;
+    border-color: #d04f3e !important;
+    background-color: #d04f3e !important;
+}
+
+.user-search .button.is-orange:hover {
+    border-color: #af3d2f !important;
+    background-color: #af3d2f !important;
+}
+
+.user-search .control.is-expanded.is-search {
+    padding-left: 2rem;
+}
+
+.user-search .control.is-button {
+    padding-right: 2rem;
+}
+
+.user-search #site-subtitle {
+    padding-bottom: 1.25rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.user-search input:hover {
+    border-top: 1px solid white !important;
+    border-left: 1px solid white !important;
+    border-bottom: 1px solid white !important;
+}
+
+.user-search input:focus {
+    border-top: 1px solid white !important;
+    border-left: 1px solid white !important;
+    border-bottom: 1px solid white !important;
+}
+
+.user-search .card {
+    border-radius: 8px;
+    transition: transform .2s; 
+}
+
+.user-search .card:hover {
+    transform: scale(1.03);
+}
+
+
+.user-search #user-container {
+    padding: 2rem;
+}
+
+.user-search #view-profile-button {
+    font-weight: bold;
+    position: relative;
+    width: 100%;
+}
+
+.followed-users #view-profile-button {
+    font-weight: bold;
+    position: relative;
+    width: 100%;
+}
+
+.user-search #view-profile-button:hover {
+    background-color: #305ca3;
+}
+
+.user-search .subtitle {
+    color: rgb(148, 148, 148)
+}
+
+.user-search .card-footer {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.user-search #card-profile-pic {
+    overflow: hidden;
+}
+
+.followed-users #site-subtitle {
+    padding-bottom: 1.25rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.followed-users input:hover {
+    border-top: 1px solid white !important;
+    border-left: 1px solid white !important;
+    border-bottom: 1px solid white !important;
+}
+
+.followed-users input:focus {
+    border: 1.5px solid #d54b3A !important;
+}
+
+.followed-users .card {
+    border-radius: 8px;
+    transition: transform .2s; 
+}
+
+.followed-users .card:hover {
+    transform: scale(1.03);
+}
+
+
+.followed-users #user-container {
+    padding: 2rem;
+}
+
+.followed-users #view-profile-button {
+    position: relative;
+    width: 100%;
+}
+
+.followed-users  .button.is-link:hover {
+    background-color: #305ca3 !important;
+}
+
+.followed-users .subtitle {
+    color: rgb(148, 148, 148)
+}
+
+.followed-users .card-footer {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.followed-users #card-profile-pic {
+    overflow: hidden;
+}
+
+.user-search .loader-center {
+    border: 5px solid #1c1c1c; /* Light grey */
+    border-top: 5px solid #d04f3e; 
+    border-left: 5px solid #d04f3e; 
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 47%;
+  }
+
+  .user-search .media-content {
+      overflow: hidden;
+  }
