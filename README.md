@@ -25,3 +25,19 @@ Orié is an online reddit gallery where users can search images from their favou
 3. React
 4. NodeJS
 5. NextJS
+
+# Environment variables(next.config.js):
+>
+>module.exports = {
+>	env: {
+>		REDDIT_userAgent: <insert here>,
+>		REDDIT_clientId: <insert here> ,
+>		REDDIT_clientSecret: <insert here>,
+>		REDDIT_refreshToken: <insert here>,
+>		MONGO_SRV: <insert here>,
+>		JWT_SECRET: <insert here>,
+>		ORIE_EMAIL: <insert here>,
+>		ORIE_PASSWORD: <insert here>,
+>		PROD_URL: <insert here>,
+>	},
+>};
