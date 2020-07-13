@@ -25,6 +25,7 @@ Orié is an online reddit gallery where users can search images from their favou
 3. React
 4. NodeJS
 5. NextJS
+6. Bulma 
 
 ### Environment variables(next.config.js):
 ```
