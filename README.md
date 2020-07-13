@@ -2,10 +2,10 @@
 
 ## Link: https://orie.glitch.me
 
-Description:
+### Description:
 Orié is an online reddit gallery where users can search images from their favourite subreddits and save the ones they like best. They can also view other users' galleries and choose to follow them if they like their gallery.
 
-Feature List:
+### Feature List:
 1.	Sign Up
 2.	Login/Logout
 3.	Get Images from any subreddit and display them.
@@ -18,4 +18,10 @@ Feature List:
 10.	Follow/Unfollow other users.
  
  
- 
+### Technologies used: 
+(MERN)
+1. MongoDB 
+2. Express
+3. React
+4. NodeJS
+5. NextJS
