@@ -17,9 +17,9 @@ Orié is an online reddit gallery where users can search images from their favou
 9.	View other users’ galleries.
 10.	Follow/Unfollow other users.
  
+### Stack: MERN
  
 ### Technologies used: 
-(MERN)
 1. MongoDB 
 2. Express
 3. React
