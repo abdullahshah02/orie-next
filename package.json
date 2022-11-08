@@ -19,7 +19,7 @@
     "jsonwebtoken": "^8.5.1",
     "mongo-sanitize": "^1.1.0",
     "mongoose": "^5.9.20",
-    "next": "9.4.4",
+    "next": "13.0.2",
     "node-sass": "^4.14.1",
     "nodemailer": "^6.4.10",
     "nookies": "^2.3.2",
